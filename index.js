@@ -14,11 +14,14 @@ function handle(response) {
 function handleClick() {
   FB.ui(
     {
-      method: 'share_open_graph',
-      action_type: 'og.shares',
-      action_properties: JSON.stringify({
-        object: 'http://www.heppiface.com/doodles/',
-      }),
+      method: 'feed',
+      name: 'title',
+      link: ' http://linkToShare.com',
+      picture: 'http://helloImage.png',
+      caption: 'Caption Best',
+      description: 'Desc',
+      message: '',
+      display: 'iframe'
     },
     function (response) {
       if (response && !response.error_message) {
