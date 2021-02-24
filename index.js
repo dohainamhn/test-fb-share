@@ -18,15 +18,14 @@ function handleClick() {
   FB.ui(
     {
       method: 'share',
-      display: 'popup',
-      href: `https://google.com`
+      href: 'https://developers.facebook.com/docs/',
     },
+    // callback
     function(response) {
       if (response && !response.error_message) {
-        title.innerHTML = 'shared'
-      }
-      else{
-        console.log(response);
+        alert('Posting completed.');
+      } else {
+        alert('Error while posting.');
       }
     }
   );
