@@ -18,6 +18,7 @@ function handleClick() {
   FB.ui(
     {
       method: 'share',
+      display: 'popup',
       href: `https://google.com`
     },
     function(response) {
