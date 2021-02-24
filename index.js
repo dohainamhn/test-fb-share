@@ -20,8 +20,8 @@ function handleClick() {
       picture: 'http://helloImage.png',
       caption: 'Caption Best',
       description: 'Desc',
-      message: '',
-      display: 'iframe'
+      message: '123',
+      display: 'touch'
     },
     function (response) {
       if (response && !response.error_message) {
